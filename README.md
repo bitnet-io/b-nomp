@@ -70,7 +70,7 @@ a good pool operator. For starters be sure to read:
    * https://en.bitcoin.it/wiki/Difficulty
 
 
-#### 1) Downloading & Installing
+#### 1) Downloading & Installing Ubuntu 18.04
 
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
@@ -86,6 +86,14 @@ sudo ln -sf /usr/local/bin/npm /usr/bin/npm
 git clone https://github.com/blockinator/v-nomp
 cd v-nomp
 npm install
+```
+
+**If on Ubuntu 20.04** to install `libssl1.0-dev`
+```
+sudo nano /etc/apt/sources.list
+deb http://security.ubuntu.com/ubuntu bionic-security main
+sudo apt update && apt-cache policy libssl1.0-dev
+sudo apt-get install libssl1.0-dev
 ```
 
 #### 2) Configuration
