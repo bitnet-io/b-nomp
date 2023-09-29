@@ -2,6 +2,7 @@
     "name": "Koto",
     "symbol": "KOTO",
     "algorithm": "yescryptR8G",
+    "coinbase": "v-nomp",
     "requireShielding": true,
     "nSubsidySlowStartInterval": 43200,
     "nSubsidyHalvingInterval": 1051200,

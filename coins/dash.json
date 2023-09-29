@@ -2,6 +2,7 @@
     "name": "Dash",
     "symbol": "DASH",
     "algorithm": "x11",
+    "coinbase": "v-nomp",
     "peerMagic": "bf0c6bbd",
     "peerMagicTestnet": "cee2caff",
     "blockTime": 150,

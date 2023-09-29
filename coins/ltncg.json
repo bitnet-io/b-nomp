@@ -2,6 +2,7 @@
     "name": "LightningCash-Gold",
     "symbol": "LTNCG",
     "algorithm": "yespowerLTNCG",
+    "coinbase": "v-nomp",
     "peerMagic": "d9f6ccea",
     "peerMagicTestnet": "d9f6ccea",
     "blockTime": 5,

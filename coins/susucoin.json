@@ -2,6 +2,7 @@
     "name": "Susucoin",
     "symbol": "SUSU",
     "algorithm": "sha256d",
+    "coinbase": "v-nomp",
     "peerMagic": "f9beb9e9",
     "peerMagicTestnet": "0c120807",
     "blockTime": 120,

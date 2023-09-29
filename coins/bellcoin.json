@@ -2,6 +2,7 @@
     "name": "Bellcoin",
     "symbol": "BELL",
     "algorithm": "yespower",
+    "coinbase": "v-nomp",
     "peerMagic": "facebabe",
     "peerMagicTestnet": "0b110907",
     "txfee": 0.0001,

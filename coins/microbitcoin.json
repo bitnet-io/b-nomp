@@ -2,6 +2,7 @@
     "name": "Microbitcoin",
     "symbol": "MBC",
     "algorithm": "yespower_b2b",
+    "coinbase": "v-nomp",
     "peerMagic": "736d6263",
     "peerMagicTestnet": "746d6263",
     "mainnet": {

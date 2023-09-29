@@ -2,6 +2,7 @@
     "name": "Bitcoin",
     "symbol": "BTC",
     "algorithm": "sha256",
+    "coinbase": "v-nomp",
     "peerMagic": "f9beb4d9",
     "peerMagicTestnet": "0b110907",
     "mainnet": {

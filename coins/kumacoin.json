@@ -2,6 +2,7 @@
     "name": "KumaCoin",
     "symbol": "KUMA",
     "algorithm": "quark",
+    "coinbase": "v-nomp",
     "peerMagic": "c3d4d2fe",
     "peerMagicTestnet": "cdf2c0ef",
     "blockTime": 90,

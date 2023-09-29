@@ -2,6 +2,7 @@
     "name": "CPUchain",
     "symbol": "CPU",
     "algorithm": "cpupower",
+    "coinbase": "v-nomp",
     "peerMagic": "deadbeef",
     "peerMagicTestnet": "faceb00c",
     "mainnet": {
