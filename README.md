@@ -14,18 +14,7 @@ Usage of this software requires abilities with sysadmin, database admin, coin da
 
 
 ### Community
-Forum
-* join: https://bitzeny.tech/
-
-Wiki
-* https://bitzeny.wiki.fc2.com/
-
-Discord
-* https://discord.gg/xmWd3yy
-
 If your pool uses V-NOMP let us know and we will list your website here.
-
-### Some pools using V-NOMP or node-stratum-pool module:
 
 * [Instapool.xyz](https://instapool.xyz/)
 * [mofumofu.me - BitZeny Mining Pool](https://zny.mofumofu.me/)
@@ -35,7 +24,6 @@ If your pool uses V-NOMP let us know and we will list your website here.
 
 Usage
 =====
-
 
 #### Requirements
 * Coin daemon(s) (find the coin's repo and build latest version from source)
@@ -88,12 +76,12 @@ cd v-nomp
 npm install
 ```
 
-**If on Ubuntu 20.04** to install `libssl1.0-dev`
+**If using Ubuntu 20.04** to install `libssl1.0-dev`
 ```
 sudo nano /etc/apt/sources.list
 deb http://security.ubuntu.com/ubuntu bionic-security main
 sudo apt update && apt-cache policy libssl1.0-dev
-sudo apt-get install libssl1.0-dev
+sudo apt-get install libssl1.0-dev -y
 ```
 
 #### 2) Configuration
@@ -360,7 +348,7 @@ Donations
 Credits
 -------
 ### V-NOMP
-* [blockinator](https://github.com/blockinator)
+* [wombatlabs](https://github.com/wombatlabs)
 
 ### ZNY-NOMP
 * [ROZ-MOFUMOFU-ME](https://github.com/ROZ-MOFUMOFU-ME)
