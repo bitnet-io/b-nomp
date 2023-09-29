@@ -12,9 +12,9 @@
         "zny",
         "yescrypt"
     ],
-    "homepage": "https://github.com/blockinator/v-nomp",
+    "homepage": "https://github.com/wombatlabs/v-nomp",
     "bugs": {
-        "url": "https://github.com/blockinator/v-nomp/issues"
+        "url": "https://github.com/wombatlabs/v-nomp/issues"
     },
     "license": "MIT",
     "author": "Joshua Yabut",
@@ -24,7 +24,8 @@
         "Matthew Little",
         "vekexasia",
         "TheSeven",
-        "Yoshuki43"
+        "Yoshuki43",
+        "wombatlabs"
     ],
     "main": "init.js",
     "bin": {
@@ -32,7 +33,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/blockinator/v-nomp.git"
+        "url": "https://github.com/wombatlabs/v-nomp.git"
     },
     "dependencies": {
         "async": "^3.2.0",
@@ -50,7 +51,7 @@
         "nonce": "^1.0.4",
         "redis": "^3.1.1",
         "request": "^2.88.2",
-        "stratum-pool": "git+https://github.com/blockinator/node-stratum-pool.git"
+        "stratum-pool": "https://github.com/wombatlabs/node-stratum-pool.git"
     },
     "engines": {
         "node": ">=8.11"

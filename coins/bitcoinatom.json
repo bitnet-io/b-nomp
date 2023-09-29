@@ -1,0 +1,21 @@
+{
+    "name": "BitcoinAtom",
+    "symbol": "BCA",
+    "algorithm": "sha256",
+    "peerMagic": "4fc11de8",
+    "peerMagicTestnet": "a68e3fd6",
+    "reward": "POW",
+    "mainnet": {
+        "bech32": "bca",
+        "bip32": {
+            "public": "0488b21e"
+        },
+        "pubKeyHash": "17",
+        "scriptHash": "0A"
+    },
+    "blockTime": 600,
+    "explorer": {
+        "txURL": "http://89.116.236.234:3002/tx/",
+        "blockURL": "http://89.116.236.234:3002/block/"
+    }
+}
