@@ -84,6 +84,15 @@ sudo apt update && apt-cache policy libssl1.0-dev
 sudo apt-get install libssl1.0-dev -y
 ```
 
+**If using Ubuntu 22.04** to install `libssl1.0-dev`
+```
+sudo apt-get install software-properties-common
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+sudo apt install libssl1.0-dev -y
+```
+
 #### 2) Configuration
 
 ##### Portal config
