@@ -8,6 +8,8 @@
         "": 1.0
     },
 
+    "blockIdentifier": "V-NOMP",
+
     "paymentProcessing": {
         "minConf": 10,
         "enabled": true,
