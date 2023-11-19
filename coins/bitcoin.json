@@ -5,6 +5,7 @@
     "coinbase": "v-nomp",
     "peerMagic": "f9beb4d9",
     "peerMagicTestnet": "0b110907",
+    "version_mask": true,
     "mainnet": {
         "bech32": "btc",
         "bip32": {
