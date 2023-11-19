@@ -16,7 +16,6 @@ Usage of this software requires abilities with sysadmin, database admin, coin da
 ### Community
 If your pool uses V-NOMP let us know and we will list your website here.
 
-* [Instapool.xyz](https://instapool.xyz/)
 * [mofumofu.me - BitZeny Mining Pool](https://zny.mofumofu.me/)
 * [人のプール](https://mining.zinntikumugai.xyz/)
 * [みんなのプール](https://www.minnano-pool.work/)
