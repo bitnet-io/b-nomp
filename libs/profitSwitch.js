@@ -542,8 +542,14 @@ module.exports = function(logger){
             callback(null); // fail gracefully for each coin
         });
 
-        //daemon.cmd('getblocktemplate', [ {"capabilities": [ "coinbasetxn", "workid", "coinbase/append" ]}], function(result) {
-        daemon.cmd('getblocktemplate', [ {"capabilities": [ "coinbasetxn", "workid", "coinbase/append" ]}], [ {"rules": [ "mweb", "segwit" ]} ], function(result) {
+        // Build Daemon Commands
+        const rules = ['mweb', 'segwit'];
+        const capabilities = ['coinbasetxn', 'workid', 'coinbase/append'];
+        const commands = [{ 'capabilities': capabilities, 'rules': rules }];
+        // End
+
+        //daemon.cmd('getblocktemplate', [{"capabilities": [ "coinbasetxn", "workid", "coinbase/append" ]}], function(result) {
+        daemon.cmd('getblocktemplate', commands, function(result) {
             if (result[0].error != null) {
                 logger.error(logSystem, symbol, 'Error while reading daemon info: ' + JSON.stringify(result[0]));
                 callback(null); // fail gracefully for each coin
