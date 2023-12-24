@@ -1167,6 +1167,9 @@ function SetupForPool(logger, poolOptions, setupFinished){
                         addressAmounts[a] = coinsRound(addressAmounts[a]);
                     }
 
+                    // Manually set txfee here
+                    daemon.cmd('settxfee', ["0.0001"], function (result) {});
+
                     // POINT OF NO RETURN! GOOD LUCK!
                     // WE ARE SENDING PAYMENT CMD TO DAEMON
 
