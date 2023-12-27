@@ -1,50 +1,21 @@
-# Node Open Mining Portal
-[![Join the chat at https://github.com/wombatlabs/v-nomp/](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wombatlabs/v-nomp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Matrix](https://img.shields.io/matrix/v-nomp:matrix.mofumofu.me?label=matrix)](https://app.element.io/#/room/#v-nomp:matrix.mofumofu.me)
-[![Build Status](https://travis-ci.com/wombatlabs/v-nomp.svg?branch=main)](https://travis-ci.org/wombatlabs/v-nomp)
-[![CircleCI](https://circleci.com/gh/wombatlabs/v-nomp/tree/main.svg?style=svg)](https://circleci.com/gh/wombatlabs/v-nomp/tree/main)
+# for bitnet mining in testnet
 
-This is a Yescrypt, YesPower, Lyra2REv2, CPUpower, power2b, YesPowerSugar, sha256d and more algo mining pool based off of Node Open Mining Portal.
-
-#### Production Usage Notice
-This is beta software. All of the following are things that can change and break an existing V-NOMP setup: functionality of any feature, structure of configuration files and structure of redis data. If you use this software in production then *DO NOT* pull new code straight into production usage because it can and often will break your setup and require you to tweak things like config files or redis data. *Only tagged releases are considered stable.*
-
-#### Paid Solution
-Usage of this software requires abilities with sysadmin, database admin, coin daemons, and sometimes a bit of programming. Running a production pool can literally be more work than a full-time job.
-
-
-### Community
-If your pool uses V-NOMP let us know and we will list your website here.
-
-* [mofumofu.me - BitZeny Mining Pool](https://zny.mofumofu.me/)
-* [人のプール](https://mining.zinntikumugai.xyz/)
-* [みんなのプール](https://www.minnano-pool.work/)
-* [semipool.net](https://zny.semipool.net/)
-
-Usage
-=====
-
-#### Requirements
-* Coin daemon(s) (find the coin's repo and build latest version from source)
-* [Node.js](http://nodejs.org/) v8.11+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
-* [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
-
-##### Seriously
-Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
-
-
-[**Redis security warning**](http://redis.io/topics/security): be sure firewall access to redis - an easy way is to
-include `bind 127.0.0.1` in your `redis.conf` file. Also it's a good idea to learn about and understand software that
-you are using - a good place to start with redis is [data persistence](http://redis.io/topics/persistence).
-
-
+also set bitnet for settxfee in testnet mode
+```
+bitnet-cli -testnet settxfee 0.01
+```
 #### 0) Setting up coin daemon
 Follow the build/install instructions for your coin daemon. Your coin.conf file should end up looking something like this:
 ```
+server=1
 daemon=1
-rpcuser=username
-rpcpassword=password
-rpcport=9252
+rpcuser=testuser
+rpcpassword=tespass
+rpcport=18332
+rpcbind=127.0.0.1
+rpcallowip=127.0.0.1
+port=9999
+
 ```
 For redundancy, its recommended to have at least two daemon instances running in case one drops out-of-sync or offline,
 all instances will be polled for block/transaction updates and be used for submitting blocks. Creating a backup daemon
