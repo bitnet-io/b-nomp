@@ -1125,8 +1125,22 @@ function SetupForPool(logger, poolOptions, setupFinished){
                         if (minerTotals[address] >= minPaymentSatoshis) {
                             totalSent += toSendSatoshis;
                             // send funds
-                            worker.sent = satoshisToCoins(toSendSatoshis);
-                            worker.balanceChange = Math.min(worker.balance, toSendSatoshis) * -1;
+                            //worker.sent = satoshisToCoins(toSendSatoshis);
+				
+			//new code here
+	         	if (!worker.sent) {
+			    worker.sent = 0;
+			}
+			   worker.sent += satoshisToCoins(toSendSatoshis);
+			if (!(address in addressAmounts)) {
+			    addressAmounts[address] = 0;
+			}
+			addressAmounts[address] += satoshisToCoins(toSendSatoshis);                            
+
+
+
+
+				worker.balanceChange = Math.min(worker.balance, toSendSatoshis) * -1;
                             if (addressAmounts[address] != null && addressAmounts[address] > 0) {
                                 addressAmounts[address] = coinsRound(addressAmounts[address] + worker.sent);
                             } else {

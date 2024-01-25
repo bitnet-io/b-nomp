@@ -51,9 +51,9 @@ function calculateAverageBalance(pool) {
 
 function getReadableBalanceString(Balance){
 	Balance = (Balance * 1000000);
-	if (Balance < 1000000) {
-		return '0 Hash/s';
-		//return (Math.round(Balance / 1000) / 1000 ).toFixed(2)+' Sol/s';
+	if (Balance < 10) {
+		//return '0 Hash/s';
+		return (Math.round(Balance / 1000) / 1000 ).toFixed(2)+' Sol/s';
 	}
     var byteUnits = [ ' KOTO', ' kKOTO', ' MKOTO', ' GKOTO', ' TKOTO', ' PKOTO' ];
     var i = Math.floor((Math.log(Balance/1000) / Math.log(1000)) - 1);

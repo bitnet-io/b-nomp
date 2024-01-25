@@ -70,6 +70,10 @@ module.exports = function(logger, poolConfig){
 
         var redisCommands = [];
 
+		//new code here
+        shareData.worker = shareData.worker.replace(/([\-_.!~*'()].*)/g, '').replace(/\s+/g, ''); // strip any extra strings from worker name.
+		//end new code
+
         if (isValidShare) {
             redisCommands.push(['hincrbyfloat', coin + ':shares:roundCurrent', shareData.worker, shareData.difficulty]);
             redisCommands.push(['hincrby', coin + ':stats', 'validShares', 1]);

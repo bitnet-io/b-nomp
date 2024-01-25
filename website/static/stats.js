@@ -83,9 +83,9 @@ function calculateAverageHashrate(pool) {
 
 function getReadableHashRateString(hashrate){
         hashrate = (hashrate * 1000000);
-        if (hashrate < 1000000) {
-                return '0 Hash/s';
-                //return (Math.round(hashrate / 1000) / 1000 ).toFixed(2)+' Sol/s';
+        if (hashrate < 10) {
+                //return '0 Hash/s';
+                return (Math.round(hashrate / 1000) / 1000 ).toFixed(2)+' Sol/s';
         }
     var byteUnits = [' Hash/s', ' KHash/s', ' MHash/s', ' GHash/s', ' THash/s', ' PHash/s', ' EHash/s', ' ZHash/s', ' YHash/s'];
     var i = Math.floor((Math.log(hashrate/1000) / Math.log(1000)) - 1);
